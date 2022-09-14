@@ -88,7 +88,7 @@ h4.search-title {
 }
 
 nav {
-    padding: 30px;
+    padding: 25px;
     box-shadow: 0px 0px 0px 0px;
     display: flex;
     justify-content: space-between;
@@ -100,7 +100,7 @@ nav a {
     text-decoration: none;
 
     font-weight: 700;
-    font-size: 32px;
+    font-size: 30px;
     letter-spacing: 0.07em;
     color: #FFFFFF;
 }
