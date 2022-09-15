@@ -125,10 +125,10 @@ nav input:focus {
 
 @media screen and (max-width: 489px) {
 
-    .mobile_only,
+    /* .mobile_only,
     .mobile__search {
         display: block;
-    }
+    } */
 
     .mobile__search input {
         width: 90%;
