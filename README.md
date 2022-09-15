@@ -1,4 +1,6 @@
 # flixr_movie_ui
+![flixr_web_ui](https://user-images.githubusercontent.com/55067204/190524992-f62be262-0b9f-454a-94d7-453cd3e26b46.png)
+
 
 ## Credits:
 Design: [figma community](https://www.figma.com/file/YCjRYR8gnBCvTsoKUWU4bP/Anonime---Movie-Streaming-Web-UI-Kit-(Community)?node-id=803%3A108)
