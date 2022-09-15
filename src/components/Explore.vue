@@ -15,6 +15,8 @@
                 <div class="body">
                     <div class="explore-card explore-card-overlay">
 
+                        <div class="explore-card-head"></div>
+
                         <div class="explore-card-content">
                             <h4 class="card-content-title">
                                 Black Adam
@@ -74,6 +76,9 @@ div.explore-card {
     padding: 30px;
     height: 30vw;
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -82,7 +87,6 @@ div.explor-card::before {
 }
 
 div.explore-card-content {
-    padding-top: 15vw;
     z-index: 10;
 }
 
@@ -101,11 +105,27 @@ h6.card-content-desc {
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
-    max-width: 50%;
+    max-width: 50vw;
     color: #FFFFFF;
     flex: none;
     order: 1;
     align-self: stretch;
     flex-grow: 0;
+}
+
+@media screen and (max-width: 890px) {
+
+    div.explore-card {
+        height: 100%;
+    }
+
+    h4.card-content-title {
+        font-size: 32px;
+    }
+
+    h6.card-content-desc {
+        max-width: 75vw;
+        font-size: 16px;
+    }
 }
 </style>
