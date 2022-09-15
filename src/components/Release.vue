@@ -11,75 +11,69 @@
 
                 <div class="body">
                     <div class="row">
-                        <div class="col-lg-2 col-md-2 col-12">
+                        <div class="col-lg-4 col-md-4 col-12">
                             <div class="release-card">
-
-                                <h6 class="overlay-text">
-                                    Episode 1018
-                                </h6>
                             </div>
                             <div class="release-card-overlay">
                                 <h5 class="release-title">Black Adam</h5>
+                                <h6 class="release-subtitle">
+                                    Episode 1018
+                                </h6>
                             </div>
                         </div>
 
-                        <div class="col-lg-2 col-md-2 col-12">
+                        <div class="col-lg-4 col-md-4 col-12">
                             <div class="release-card">
-                        
-                                <h6 class="overlay-text">
-                                    Episode 1018
-                                </h6>
                             </div>
                             <div class="release-card-overlay">
                                 <h5 class="release-title">Black Adam</h5>
+                                <h6 class="release-subtitle">
+                                    Episode 1018
+                                </h6>
                             </div>
                         </div>
 
-                        <div class="col-lg-2 col-md-2 col-12">
+                        <div class="col-lg-4 col-md-4 col-12">
                             <div class="release-card">
-                        
-                                <h6 class="overlay-text">
-                                    Episode 1018
-                                </h6>
                             </div>
                             <div class="release-card-overlay">
                                 <h5 class="release-title">Black Adam</h5>
+                                <h6 class="release-subtitle">
+                                    Episode 1018
+                                </h6>
                             </div>
                         </div>
 
-                        <div class="col-lg-2 col-md-2 col-12">
+                        <div class="col-lg-4 col-md-4 col-12">
                             <div class="release-card">
-                        
-                                <h6 class="overlay-text">
-                                    Episode 1018
-                                </h6>
                             </div>
                             <div class="release-card-overlay">
                                 <h5 class="release-title">Black Adam</h5>
+                                <h6 class="release-subtitle">
+                                    Episode 1018
+                                </h6>
                             </div>
                         </div>
 
-                        <div class="col-lg-2 col-md-2 col-12">
+                        <div class="col-lg-4 col-md-4 col-12">
                             <div class="release-card">
-                        
-                                <h6 class="overlay-text">
-                                    Episode 1018
-                                </h6>
                             </div>
                             <div class="release-card-overlay">
                                 <h5 class="release-title">Black Adam</h5>
+                                <h6 class="release-subtitle">
+                                    Episode 1018
+                                </h6>
                             </div>
                         </div>
 
-                        <div class="col-lg-2 col-md-2 col-12">
+                        <div class="col-lg-4 col-md-4 col-12">
                             <div class="release-card">
-                        
-                                <h6 class="overlay-text">
-                                    Episode 1018
-                                </h6>
                             </div>
                             <div class="release-card-overlay">
                                 <h5 class="release-title">Black Adam</h5>
+                                <h6 class="release-subtitle">
+                                    Episode 1018
+                                </h6>
                             </div>
                         </div>
                     </div>
@@ -105,35 +99,47 @@ section.release {
     padding-bottom: 60px;
 }
 
+div.body>div.row>div.col-12 {
+    padding-bottom: 30px;
+}
+
+div.body>div.row>div.col-12:last-child {
+    padding-bottom: 0px;
+}
+
 h3.release-title {
     font-weight: 600;
     font-size: 32px;
     color: #FFFFFF;
 }
 
+h6.release-subtitle {
+    text-align: center;
+    color: #e9e5e5a2;
+}
+
 div.release-card {
-    background: url("../assets/img/2021-black-adam.jpg") no-repeat center;
+    background: url("../assets/img/2021-black-adam.jpg") no-repeat center 0px;
     background-size: cover;
     border-radius: 12px;
-    padding: 30px;
-    height: 20vw;
+    height: 380px;
     max-width: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-h6.overlay-text {
-    text-align: center;
-    padding-top: 17vw;
-    color: #192026;
-}
 
-/* div.release-card-overlay::before {
+div.release-card::after {
     content: "";
-    position: absolute;
     z-index: 10;
-    background: linear-gradient(180deg, rgba(29, 29, 29, 0) 0%, #0F1E29 100%);
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: rgb(17, 16, 16);
     opacity: 0.5;
-} */
+}
 
 div.release-card-overlay>h5.release-title {
     font-weight: 600;
@@ -142,5 +148,32 @@ div.release-card-overlay>h5.release-title {
     line-height: 18px;
     text-align: center;
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 890px) {
+
+    div.body>div.row>div.col-12 {
+        padding-bottom: 30px;
+    }
+
+    div.body>div.row>div.col-12:last-child {
+        padding-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 789px) {
+    div.release-card {
+        height: 400px;
+        width: 90%;
+        margin: auto;
+    }
+
+    div.body>div.row>div.col-12 {
+        padding-bottom: 30px;
+    }
+
+    div.body>div.row>div.col-12:last-child {
+        padding-bottom: 0px;
+    }
 }
 </style>
