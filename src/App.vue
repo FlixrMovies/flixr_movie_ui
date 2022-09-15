@@ -1,29 +1,14 @@
 <template>
-  <!-- Navbar -->
-  <Navbar />
-  <!-- End of Navbar -->
-
-  <!-- Explore -->
-  <Explore />
-  <!-- End of Explore -->
-
-  <!-- Release -->
-  <Release />
-  <!-- End of Release -->
-
   <router-view />
 </template>
 
 <script>
-import Navbar from "@/components/Navbar.vue";
-import Explore from "@/components/Explore.vue";
-import Release from "@/components/Release.vue";
+import HomeView from "@/views/HomeView.vue";
 
 export default {
   name: "App",
   components: {
-    Navbar, Explore,
-    Release
+    HomeView
   }
 }
 </script>
