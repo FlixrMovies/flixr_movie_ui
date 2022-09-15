@@ -129,21 +129,7 @@ export default {
                 }
             ]
         }
-    },
-    mounted() {
-        this.printMovies();
-    },
-    methods: {
-        printMovies() {
-
-            let movies = this.popularMovies;
-
-
-            movies.map(movie => {
-                console.log("Movie: ", movie)
-            })
-        }
-    },
+    }
 }
 </script>
 
