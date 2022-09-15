@@ -43,7 +43,7 @@
                                         </li>
                                         <li class="cover-detail">
                                             Genres:
-                                            <p class="cover-detail-muted">Action, Adventure, Fantasy</p>
+                                            <p class="cover-detail-muted">Action, Adventure</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -56,8 +56,12 @@
                                 <p class="meta-desc-muted">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, temporibus. In
                                     iure aliquam odit recusandae sequi, officiis optio exercitationem laudantium
-                                    voluptatum modi perferendis blanditiis saepe ullam nemo tempora facilis! Architecto
-                                    explicabo facilis consequuntur fuga voluptatibus atque quae hic molestias dolor enim
+                                    voluptatum modi perferendis blanditiis saepe ullam nemo tempora facilis!
+
+                                    <br />
+
+                                    Architecto explicabo facilis consequuntur fuga voluptatibus atque quae hic molestias
+                                    dolor enim
                                     ea illo, expedita perspiciatis et veritatis corporis aut aliquam quis sapiente
                                     numquam odit totam quibusdam maiores nulla? Quaerat, laboriosam.
                                 </p>
@@ -171,6 +175,7 @@ div.popular>div.body>div.row>div.col-12 {
 div.movie-card {
     border-radius: 12px;
     height: 350px;
+    text-align: center;
 }
 
 div.movie-card>img {
@@ -228,5 +233,41 @@ p.meta-desc-muted {
     letter-spacing: 0.07em;
     color: #868686;
     max-width: 80%;
+}
+
+@media screen and (max-width: 489px) {
+    div.cover-art {
+        flex-direction: column;
+    }
+
+    ul.cover-details {
+        padding-left: 0%;
+        margin-top: 10px;
+    }
+
+    li.cover-detail {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    p.meta-desc-muted {
+        max-width: 100%;
+    }
+
+    div.popular>div.head {
+        margin-top: 30px;
+    }
+
+    div.cover-art>img,
+    div.movie-card>img {
+        width: 90% !important;
+        height: 350px;
+    }
+
+    div.cover-art>img {
+        height: 450px;
+        margin: auto;
+    }
 }
 </style>
