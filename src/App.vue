@@ -60,7 +60,14 @@ body::-webkit-scrollbar-thumb {
 #app {
   font-family: 'Poppins', sans-serif;
   background: #192026;
+  height: max-content;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 890px) {
+  #app {
+    height: auto;
+  }
 }
 </style>
