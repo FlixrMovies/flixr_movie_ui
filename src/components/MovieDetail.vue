@@ -78,46 +78,11 @@
 
                             <div class="body">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <div class="movie-card">
-                                            <img src="@/assets/img/2021-black-adam.jpg" alt="movie-conver-art"
-                                                class="w-100 h-100 img-responsive">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <div class="movie-card">
-                                            <img src="@/assets/img/2021-black-adam.jpg" alt="movie-conver-art"
-                                                class="w-100 h-100 img-responsive">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <div class="movie-card">
-                                            <img src="@/assets/img/2021-black-adam.jpg" alt="movie-conver-art"
-                                                class="w-100 h-100 img-responsive">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <div class="movie-card">
-                                            <img src="@/assets/img/2021-black-adam.jpg" alt="movie-conver-art"
-                                                class="w-100 h-100 img-responsive">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <div class="movie-card">
-                                            <img src="@/assets/img/2021-black-adam.jpg" alt="movie-conver-art"
-                                                class="w-100 h-100 img-responsive">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <div class="movie-card">
-                                            <img src="@/assets/img/2021-black-adam.jpg" alt="movie-conver-art"
-                                                class="w-100 h-100 img-responsive">
-                                        </div>
+                                    <div class="col-lg-6 col-md-6 col-12" v-for="movie in popularMovies"
+                                        :key="movie.id">
+                                        <!-- movie card -->
+                                        <MovieCard :source="movie.imageSrc" :alt="movie.imageAlt" />
+                                        <!-- end of movie card -->
                                     </div>
                                 </div>
                             </div>
@@ -131,12 +96,54 @@
 
 <script>
 import Navbar from "@/components/Navbar.vue";
+import MovieCard from "./MovieCard.vue";
 
 export default {
     name: "MovieDetail",
     components: {
-        Navbar
-    }
+        Navbar,
+        MovieCard
+    },
+    data() {
+        return {
+            popularMovies: [
+                {
+                    "id": Math.random(0, 100),
+                    "imageSrc": "@/assets/img/2021-black-adam.jpg",
+                    "imageAlt": "movie-conver-art"
+                },
+                {
+                    "id": Math.random(0, 100),
+                    "imageSrc": "@/assets/img/2021-black-adam.jpg",
+                    "imageAlt": "movie-conver-art"
+                },
+                {
+                    "id": Math.random(0, 100),
+                    "imageSrc": "@/assets/img/2021-black-adam.jpg",
+                    "imageAlt": "movie-conver-art"
+                },
+                {
+                    "id": Math.random(0, 100),
+                    "imageSrc": "@/assets/img/2021-black-adam.jpg",
+                    "imageAlt": "movie-conver-art"
+                }
+            ]
+        }
+    },
+    mounted() {
+        this.printMovies();
+    },
+    methods: {
+        printMovies() {
+
+            let movies = this.popularMovies;
+
+
+            movies.map(movie => {
+                console.log("Movie: ", movie)
+            })
+        }
+    },
 }
 </script>
 
